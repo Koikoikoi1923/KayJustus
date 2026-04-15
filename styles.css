@@ -69,10 +69,12 @@ a {
 .main-nav a,
 .header-contact {
   text-decoration: none;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 0.98rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
   color: var(--text-secondary);
-  letter-spacing: 0.015em;
+  letter-spacing: 0.02em;
+  font-style: normal;
 }
 
 .main-nav a {
@@ -84,13 +86,13 @@ a {
 
 .main-nav a:hover,
 .main-nav a:focus-visible {
-  color: var(--text-primary);
-  border-bottom-color: var(--border);
+  color: #06132a;
+  border-bottom-color: rgba(10, 31, 68, 0.3);
 }
 
 .main-nav a[aria-current='page'] {
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 500;
   border-bottom-color: var(--text-primary);
 }
 
@@ -102,13 +104,13 @@ a {
 
 .header-contact:hover,
 .header-contact:focus-visible {
-  color: var(--text-primary);
-  border-bottom-color: var(--border);
+  color: #06132a;
+  border-bottom-color: rgba(10, 31, 68, 0.3);
 }
 
 .header-contact[aria-current='page'] {
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 500;
   border-bottom-color: var(--text-primary);
 }
 
