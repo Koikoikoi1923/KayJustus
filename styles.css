@@ -1,15 +1,15 @@
 :root {
-  --background: #f4f1ec;
-  --surface: #eceae6;
-  --surface-strong: #e1ded8;
+  --background: #ffffff;
+  --surface: #ffffff;
+  --surface-strong: #f2f4f7;
   --text-primary: #0a0a0a;
-  --text-secondary: #2f2f2f;
-  --border: #b7b7b7;
-  --primary: #1b263b;
-  --secondary: #2f2f2f;
-  --accent: #b08d57;
-  --accent-soft: #2f2f2f;
-  --shadow-soft: 0 16px 40px -30px rgba(10, 10, 10, 0.22);
+  --text-secondary: #0a1f44;
+  --border: #f2f4f7;
+  --primary: #0a1f44;
+  --secondary: #081734;
+  --accent: #c6a75e;
+  --accent-soft: #0a1f44;
+  --shadow-soft: none;
 }
 
 * {
@@ -37,7 +37,7 @@ a {
 
 .site-header {
   border-bottom: 1px solid var(--border);
-  background: color-mix(in srgb, var(--surface) 94%, white 6%);
+  background: var(--background);
   position: sticky;
   top: 0;
   z-index: 20;
@@ -89,7 +89,7 @@ main.page {
 
 .hero {
   border: 1px solid var(--border);
-  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 90%, white 10%) 0%, var(--surface) 100%);
+  background: var(--surface);
   box-shadow: var(--shadow-soft);
   padding: clamp(1.8rem, 4vw, 3rem);
 }
@@ -148,22 +148,25 @@ h1 {
 
 .button-primary {
   background: var(--primary);
-  color: var(--background);
+  color: #ffffff;
   border-color: var(--primary);
 }
 
 .button-primary:hover {
   background: var(--secondary);
+  border-color: var(--secondary);
 }
 
 .button-secondary {
   background: transparent;
-  border-color: var(--accent-soft);
+  border-color: var(--primary);
   color: var(--primary);
 }
 
 .button-secondary:hover {
   background: var(--surface-strong);
+  border-color: var(--accent);
+  color: var(--secondary);
 }
 
 .section-grid {
