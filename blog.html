@@ -21,9 +21,9 @@
       <div class="page header-inner">
         <a class="brand" href="index.html" aria-label="Naar homepage">Kay Justus</a>
         <nav class="main-nav" aria-label="Hoofdnavigatie">
-          <a href="index.html">Home</a>
-          <a href="index.html#writings">Writings</a>
-          <a href="index.html#about">About</a>
+          <a href="index.html" data-nav="home">Home</a>
+          <a href="blog.html" data-nav="writing">Writings</a>
+          <a href="index.html#about" data-nav="about">About</a>
         </nav>
         <a class="header-contact" href="/contact">Contact</a>
       </div>
@@ -85,6 +85,28 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      const normalizePathname = (pathname) => {
+        if (!pathname) return '/';
+        const withoutIndex = pathname.replace(/\/index\.html$/, '/');
+        const withoutExtension = withoutIndex.replace(/\.html$/, '');
+        return withoutExtension.replace(/\/+$/, '') || '/';
+      };
+
+      const currentPath = normalizePathname(window.location.pathname);
+      const isWritingRoute = /^\/(blog|writings)(\/|$)/.test(currentPath);
+      const isHomeRoute = currentPath === '/';
+
+      document.querySelectorAll('.main-nav [data-nav]').forEach((link) => {
+        const isActive =
+          (link.dataset.nav === 'home' && isHomeRoute) || (link.dataset.nav === 'writing' && isWritingRoute);
+
+        if (isActive) {
+          link.setAttribute('aria-current', 'page');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
     </script>
   </body>
 </html>
