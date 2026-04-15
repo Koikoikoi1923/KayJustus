@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kay Justus schrijft over ideeën, business, filosofie en het bouwen van een eigen leven."
+    />
+    <title>Kay Justus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-labelledby="site-title">
+        <p class="eyebrow">Personal brand</p>
+        <h1 id="site-title">Kay Justus</h1>
+        <p class="positioning">
+          Ik schrijf, denk en bouw op het snijvlak van ideeën, business en een bewust geleefd leven.
+        </p>
+        <div class="intro">
+          <p>
+            Welkom op mijn digitale thuisbasis. Hier deel ik scherpe observaties, praktische lessen en lange
+            gedachten over werk, groei en betekenis.
+          </p>
+          <p>
+            Vanuit Spanje bouw ik aan een eigen pad — met woorden, projecten en keuzes die op de lange termijn
+            kloppen.
+          </p>
+        </div>
+        <div class="actions" aria-label="Belangrijke links">
+          <a class="button button-primary" href="#writings">Writings</a>
+          <a class="button button-secondary" href="https://www.linkedin.com" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+
+      <section id="writings" class="focus" aria-labelledby="focus-title">
+        <h2 id="focus-title">Waar ik over schrijf, denk en werk</h2>
+        <ul>
+          <li>Schrijven als instrument om helderheid te vinden.</li>
+          <li>Ideeën die business, filosofie en realiteit verbinden.</li>
+          <li>Persoonlijke groei zonder ruis, met discipline en richting.</li>
+          <li>Bouwen aan een eigen leven vanuit vrijheid, verantwoordelijkheid en eenvoud.</li>
+          <li>Leren en leven in Spanje, met oog voor tempo, kwaliteit en diepgang.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Kay Justus. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
