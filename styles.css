@@ -42,13 +42,14 @@ a {
 }
 
 .header-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
   padding: 1.05rem 0;
 }
 
 .brand {
+  justify-self: start;
   text-decoration: none;
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.28rem;
@@ -60,9 +61,11 @@ a {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  justify-self: center;
 }
 
-.main-nav a {
+.main-nav a,
+.header-contact {
   text-decoration: none;
   font-size: 0.95rem;
   color: var(--text-secondary);
@@ -72,6 +75,10 @@ a {
 .main-nav a[aria-current='page'] {
   color: var(--text-primary);
   font-weight: 600;
+}
+
+.header-contact {
+  justify-self: end;
 }
 
 main.page {
@@ -260,6 +267,7 @@ h2 {
   }
 
   .header-inner {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.6rem;
@@ -268,6 +276,11 @@ h2 {
   .main-nav {
     gap: 1rem;
     flex-wrap: wrap;
+    justify-self: auto;
+  }
+
+  .header-contact {
+    justify-self: auto;
   }
 
   .hero {
