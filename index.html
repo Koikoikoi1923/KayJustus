@@ -38,13 +38,13 @@
           duurzame keuzes.
         </p>
         <div class="actions" aria-label="Belangrijke links">
-          <a class="button button-primary" href="blog.html">Lees de writings</a>
+          <a id="writings-cta" class="button button-primary" href="blog.html">Lees de writings</a>
           <a class="button button-secondary" href="#contact">Neem contact op</a>
         </div>
       </section>
 
       <section id="writings" class="section-grid" aria-labelledby="writings-title">
-        <h2 id="writings-title">Writings</h2>
+        <h2 id="writings-title"><a id="writings-heading-link" class="section-heading-link" href="blog.html">Writings</a></h2>
         <div class="section-body">
           <p>
             Hier vind je essays, observaties en praktische notities over het bouwen van een zelfstandig leven en een
@@ -94,6 +94,13 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      const writingsCta = document.getElementById('writings-cta');
+      const writingsHeadingLink = document.getElementById('writings-heading-link');
+
+      if (writingsCta && writingsHeadingLink) {
+        writingsHeadingLink.href = writingsCta.getAttribute('href');
+      }
     </script>
   </body>
 </html>
