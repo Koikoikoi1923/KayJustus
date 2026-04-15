@@ -1,13 +1,13 @@
 :root {
-  --background: #f1ece4;
-  --surface: #f8f4ee;
-  --surface-strong: #f0e8de;
-  --text-primary: #191612;
-  --text-secondary: #4a4036;
-  --border: #c8b8a6;
-  --accent: #3a2d23;
-  --accent-soft: #6f5a48;
-  --shadow-soft: 0 16px 40px -30px rgba(22, 16, 10, 0.45);
+  --background: #e6e9ed;
+  --surface: #f2f4f7;
+  --surface-strong: #d8dde4;
+  --text-primary: #12161b;
+  --text-secondary: #3e464f;
+  --border: #b2bac4;
+  --accent: #2b323a;
+  --accent-soft: #5a6673;
+  --shadow-soft: 0 16px 40px -30px rgba(12, 16, 22, 0.38);
 }
 
 * {
@@ -146,12 +146,12 @@ h1 {
 
 .button-primary {
   background: var(--accent);
-  color: #f9f5f0;
+  color: #f4f6f8;
   border-color: var(--accent);
 }
 
 .button-primary:hover {
-  background: #261d16;
+  background: #1b2229;
 }
 
 .button-secondary {
@@ -202,7 +202,7 @@ h2 {
 .structured-list li {
   position: relative;
   padding-left: 1.15rem;
-  color: #2b241d;
+  color: #27303a;
 }
 
 .structured-list li::before {
