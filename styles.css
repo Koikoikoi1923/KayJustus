@@ -1,13 +1,15 @@
 :root {
-  --background: #e6e9ed;
-  --surface: #f2f4f7;
-  --surface-strong: #d8dde4;
-  --text-primary: #12161b;
-  --text-secondary: #3e464f;
-  --border: #b2bac4;
-  --accent: #2b323a;
-  --accent-soft: #5a6673;
-  --shadow-soft: 0 16px 40px -30px rgba(12, 16, 22, 0.38);
+  --background: #f4f1ec;
+  --surface: #eceae6;
+  --surface-strong: #e1ded8;
+  --text-primary: #0a0a0a;
+  --text-secondary: #2f2f2f;
+  --border: #b7b7b7;
+  --primary: #1b263b;
+  --secondary: #2f2f2f;
+  --accent: #b08d57;
+  --accent-soft: #2f2f2f;
+  --shadow-soft: 0 16px 40px -30px rgba(10, 10, 10, 0.22);
 }
 
 * {
@@ -145,19 +147,19 @@ h1 {
 }
 
 .button-primary {
-  background: var(--accent);
-  color: #f4f6f8;
-  border-color: var(--accent);
+  background: var(--primary);
+  color: var(--background);
+  border-color: var(--primary);
 }
 
 .button-primary:hover {
-  background: #1b2229;
+  background: var(--secondary);
 }
 
 .button-secondary {
   background: transparent;
   border-color: var(--accent-soft);
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .button-secondary:hover {
@@ -214,7 +216,7 @@ h2 {
 .structured-list li {
   position: relative;
   padding-left: 1.15rem;
-  color: #27303a;
+  color: var(--text-secondary);
 }
 
 .structured-list li::before {
