@@ -62,16 +62,17 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1.6rem;
   justify-self: center;
 }
 
 .main-nav a,
 .header-contact {
   text-decoration: none;
-  font-size: 0.95rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.98rem;
   color: var(--text-secondary);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.015em;
 }
 
 .main-nav a {
@@ -95,6 +96,20 @@ a {
 
 .header-contact {
   justify-self: end;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.header-contact:hover,
+.header-contact:focus-visible {
+  color: var(--text-primary);
+  border-bottom-color: var(--border);
+}
+
+.header-contact[aria-current='page'] {
+  color: var(--text-primary);
+  font-weight: 600;
+  border-bottom-color: var(--text-primary);
 }
 
 main.page {
