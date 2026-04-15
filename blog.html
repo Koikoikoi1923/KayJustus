@@ -17,6 +17,18 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <div class="page header-inner">
+        <a class="brand" href="index.html" aria-label="Naar homepage">Kay Justus</a>
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+          <a href="index.html">Home</a>
+          <a href="index.html#writings">Writings</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
     <main class="page">
       <section class="hero" aria-labelledby="blog-title">
         <p class="eyebrow">Blog</p>
@@ -27,37 +39,39 @@
         </p>
       </section>
 
-      <section class="focus blog-list" aria-labelledby="articles-title">
+      <section class="section-grid blog-list" aria-labelledby="articles-title">
         <h2 id="articles-title">Recente artikelen</h2>
-        <ul>
-          <li>
-            <article>
-              <h3>Waarom langzaam denken sneller resultaat oplevert</h3>
-              <p>
-                Over het voordeel van vertragen in een wereld vol haast — en hoe betere beslissingen vaak uit stilte
-                ontstaan.
-              </p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>De discipline van een eigen ritme</h3>
-              <p>
-                Een korte reflectie op routines die je niet opsluiten, maar juist ruimte geven voor focus, creativiteit
-                en vrijheid.
-              </p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Wat business kan leren van filosofie</h3>
-              <p>
-                Drie ideeën uit de filosofie die helpen om helderder te leiden, rustiger te bouwen en eerlijker te
-                kiezen.
-              </p>
-            </article>
-          </li>
-        </ul>
+        <div class="section-body">
+          <ul>
+            <li>
+              <article>
+                <h3>Waarom langzaam denken sneller resultaat oplevert</h3>
+                <p>
+                  Over het voordeel van vertragen in een wereld vol haast — en hoe betere beslissingen vaak uit stilte
+                  ontstaan.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>De discipline van een eigen ritme</h3>
+                <p>
+                  Een korte reflectie op routines die je niet opsluiten, maar juist ruimte geven voor focus,
+                  creativiteit en vrijheid.
+                </p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Wat business kan leren van filosofie</h3>
+                <p>
+                  Drie ideeën uit de filosofie die helpen om helderder te leiden, rustiger te bouwen en eerlijker te
+                  kiezen.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <nav class="actions" aria-label="Navigatie">
