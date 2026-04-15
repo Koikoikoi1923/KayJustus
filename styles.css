@@ -10,6 +10,8 @@
   --accent: #c6a75e;
   --accent-soft: #0a1f44;
   --shadow-soft: none;
+
+  --great-wave-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0d/Great_Wave_off_Kanagawa2.jpg');
 }
 
 * {
@@ -127,8 +129,37 @@ main.page {
 }
 
 .hero-editorial {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   padding: clamp(2.8rem, 8vw, 5.8rem) 0 clamp(2.1rem, 5vw, 3.2rem);
   border-bottom: 1px solid var(--border);
+}
+
+.hero-editorial::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--great-wave-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 24%;
+  opacity: 0.065;
+  filter: saturate(75%) contrast(88%);
+  transform: scale(1.03);
+  z-index: -2;
+}
+
+.hero-editorial::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.94) 100%);
+  z-index: -1;
+}
+
+.hero-editorial > * {
+  position: relative;
 }
 
 .hero-kicker {
