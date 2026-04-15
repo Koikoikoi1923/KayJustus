@@ -17,40 +17,74 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <div class="page header-inner">
+        <a class="brand" href="index.html" aria-label="Naar homepage">Kay Justus</a>
+        <nav class="main-nav" aria-label="Hoofdnavigatie">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="#writings">Writings</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
     <main class="page">
       <section class="hero" aria-labelledby="site-title">
-        <p class="eyebrow">Personal brand</p>
-        <h1 id="site-title">Kay Justus</h1>
+        <p class="eyebrow">Personal platform</p>
+        <h1 id="site-title">Schrijver, denker en bouwer van werk met gewicht.</h1>
         <p class="positioning">
-          Ik schrijf, denk en bouw op het snijvlak van ideeën, business en een bewust geleefd leven.
+          Ik schrijf over ideeën, business en karaktervorming. Geen ruis, geen hype — wel richting, helderheid en
+          duurzame keuzes.
         </p>
-        <div class="intro">
-          <p>
-            Welkom op mijn digitale thuisbasis. Hier deel ik scherpe observaties, praktische lessen en lange
-            gedachten over werk, groei en betekenis.
-          </p>
-          <p>
-            Vanuit Spanje bouw ik aan een eigen pad — met woorden, projecten en keuzes die op de lange termijn
-            kloppen.
-          </p>
-        </div>
         <div class="actions" aria-label="Belangrijke links">
-          <a class="button button-primary" href="blog.html">Blog</a>
-          <a class="button button-secondary" href="https://www.linkedin.com" target="_blank" rel="noreferrer"
-            >LinkedIn</a
-          >
+          <a class="button button-primary" href="blog.html">Lees de writings</a>
+          <a class="button button-secondary" href="#contact">Neem contact op</a>
         </div>
       </section>
 
-      <section id="writings" class="focus" aria-labelledby="focus-title">
-        <h2 id="focus-title">Waar ik over schrijf, denk en werk</h2>
-        <ul>
-          <li>Schrijven als instrument om helderheid te vinden.</li>
-          <li>Ideeën die business, filosofie en realiteit verbinden.</li>
-          <li>Persoonlijke groei zonder ruis, met discipline en richting.</li>
-          <li>Bouwen aan een eigen leven vanuit vrijheid, verantwoordelijkheid en eenvoud.</li>
-          <li>Leren en leven in Spanje, met oog voor tempo, kwaliteit en diepgang.</li>
-        </ul>
+      <section id="writings" class="section-grid" aria-labelledby="writings-title">
+        <h2 id="writings-title">Writings</h2>
+        <div class="section-body">
+          <p>
+            Hier vind je essays, observaties en praktische notities over het bouwen van een zelfstandig leven en een
+            sterk innerlijk kompas.
+          </p>
+          <ul class="structured-list">
+            <li>Schrijven als instrument voor scherp denken en besluiten met consequentie.</li>
+            <li>Business als vak van verantwoordelijkheid, niet van oppervlakkige groei.</li>
+            <li>Filosofie vertaald naar dagelijks handelen en leiderschap onder druk.</li>
+            <li>Persoonlijke discipline, ritme en focus als basis voor vrijheid.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section-grid" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <div class="section-body">
+          <p>
+            Vanuit Spanje werk ik aan een oeuvre van woorden en projecten die op lange termijn waarde houden. Dit
+            platform is mijn publieke werktafel: zorgvuldig, helder en gericht op inhoud.
+          </p>
+          <p>
+            Mijn stijl is klassiek in discipline en modern in uitvoering: eerst denken, dan bouwen, dan verbeteren.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section-grid" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="section-body">
+          <p>
+            Voor samenwerking, spreekverzoeken of redactionele vragen kun je contact opnemen via LinkedIn. Ik reageer
+            selectief op trajecten met inhoud, diepgang en wederzijds respect.
+          </p>
+          <p>
+            <a class="text-link" href="https://www.linkedin.com" target="_blank" rel="noreferrer"
+              >Bezoek mijn LinkedIn-profiel</a
+            >
+          </p>
+        </div>
       </section>
     </main>
 
