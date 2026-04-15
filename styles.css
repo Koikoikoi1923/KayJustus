@@ -102,46 +102,22 @@ main.page {
 }
 
 .hero {
-  border: 1px solid #1c2a40;
-  background: linear-gradient(145deg, #0b1a2f 0%, #0a0a0a 100%);
+  border: 1px solid rgba(10, 31, 68, 0.35);
+  background: #ffffff;
   box-shadow: var(--shadow-soft);
   padding: clamp(1.8rem, 4vw, 3rem);
-  color: #ffffff;
 }
 
 .hero h1 {
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .hero .eyebrow {
-  color: #d1d5db;
+  color: var(--accent-soft);
 }
 
 .hero .positioning {
-  color: #d1d5db;
-}
-
-.hero .button-primary {
-  background: #c6a75e;
-  color: #0a0a0a;
-  border-color: #c6a75e;
-}
-
-.hero .button-primary:hover {
-  background: #d3b97d;
-  border-color: #d3b97d;
-}
-
-.hero .button-secondary {
-  background: transparent;
-  border-color: #d1d5db;
-  color: #ffffff;
-}
-
-.hero .button-secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: #ffffff;
-  color: #ffffff;
+  color: var(--text-secondary);
 }
 
 .eyebrow {
